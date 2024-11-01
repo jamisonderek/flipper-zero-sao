@@ -13,7 +13,7 @@
         return this._addr;
     },
     /**
-     * Locates the AT23C32 device on the I2C bus.
+     * Locates the SAMPLE device on the I2C bus.
      * @param {i2c} i2cType 
      * @param {number} deviceRWAddress
      * @returns true if device was found, false otherwise.
@@ -37,4 +37,18 @@
     _getAddress: function () {
         return this._addr;
     },
+    foo: function () {
+        this.i2c.write(this._addr, [0,1,2], this.timeout);
+    },
+    bar: function () {
+        // Write command "1" and then read 4 bytes.
+        let buffer = this.i2c.writeRead(this._addr, [1], 4, this.timeout);
+        if (buffer === undefined) {
+          print("Sample:Err-1")
+          return undefined;
+        }
+        let data = Uint8Array(buffer);
+        let x = ((data[3] << 24) | (data[2] << 16) | (data[1] << 8) | data[0]);
+        return x;   
+    }
 });
