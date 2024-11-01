@@ -1,0 +1,17 @@
+// at24c32
+
+let i2c = require("i2c");
+
+at24c32.init(i2c, 0x50); // returns true if the device is found at the address
+
+getRWAddress(); // returns the address of the I2C device
+
+readByte(memAddr); // reads a byte from the memory address
+
+readBytes(memAddr, length); // returns an array of bytes starting at memory address
+
+readString(memAddr, length); // returns a string of bytes starting at memory address
+
+writeByte(memAddr, data); // writes a byte to the memory address
+
+writeBytes(memAddr, data); // writes an array of bytes starting at memory address
