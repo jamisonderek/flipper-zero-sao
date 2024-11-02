@@ -20,6 +20,7 @@ Hopefully by November 3rd, I'll have directions for using the **BadgeLife SAO De
 
 Supported modules:
 - AT24C32 - 32K I2C EEPROM
+- LIS2DH12 - Accelerometer
 - MCP23017 - 16-bit GPIO expander
 - SK9822 - Addressable RGB LEDs
 - WS2812B - Addressable RGB LEDs (required rebuulding the firmware)
@@ -39,7 +40,9 @@ Future modules:
 - [sao_at24_w_sao69.js](./js_app/examples/apps/Scripts/SAO/sao_at24_w_sao69.js) - Program the AT24C32 EEPROM with a SAO.69 formatted message.
 - [sao_at24_w_life.js](./js_app/examples/apps/Scripts/SAO/sao_at24_w_life.js) - Program the AT24C32 EEPROM with a [Badge.team LIFE](https://badge.team/docs/standards/sao/binary_descriptor/) formatted message.
 - [sao_at24_read.js](./js_app/examples/apps/Scripts/SAO/sao_at24_read.js) - Read the AT24C32 EEPROM.
+- [sao_blinky_loop.js](./js_app/examples/apps/Scripts/SAO/sao_blinky_loop.js) - Blinks the 12 WS2812B LEDs on the [Blinky Loop SAO](ckaday.io/project/198163-blinky-loop-sao) by [Thomas Flummer](https://hackaday.io/tf)
 - [sao_sk9822.js](./js_app/examples/apps/Scripts/SAO/sao_sk9822.js) - Control SK9822 RGB LEDs.
+- [sao_lis2dh12.js](./js_app/examples/apps/Scripts/SAO/sao_lis2dh12.js) - Read the LIS2DH12 accelerometer.
 - [sao_mcp_out.js](./js_app/examples/apps/Scripts/SAO/sao_mcp_out.js) - Control a MCP23017 GPIO expander (Blinks GPIOA0-GPIOA5).
 - [sao_mcp_matrix.js](./js_app/examples/apps/Scripts/SAO/sao_mcp_matrix.js) - Control a MCP23017 GPIO expander (Input using a 4x4 button matrix on GPIOB0-7).
 - [sao_ws2812b.js](./js_app/examples/apps/Scripts/SAO/sao_ws2812b.js) - Control WS2812B RGB LEDs. Currently requires [custom firmware](#custom-firmware).
@@ -65,3 +68,8 @@ Make sure your Flipper Zero is plugged in to your computer, and that qFlipper an
 ```bash
 ./fbt COMPACT=1 DEBUG=0 FORCE=1 flash_usb_full 
 ```
+
+## Support
+Feel free to reach out to me on Discord. My username is `@codeallnight` and you can also tag me on any of the Flipper Firmware servers.
+
+Support my work by [buying me a coffee](https://www.ko-fi.com/codeallnight)!
