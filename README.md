@@ -5,7 +5,7 @@ This project is for using the Flipper Zero to debug [SAO devices](https://hackad
 
 You can update scripts using a bluetooth connected mobile phone (run the Flipper Zero [mobile app](https://flipperzero.one/downloads) and choose `Options/File Manager/ext/apps/Scripts/SAO`), or using a text editor directly on the Flipper Zero. This is especially useful for quickly iterating or making minor tweaks to existing scripts.
 
-Hopefully by November 3rd, I'll have directions for using the **BadgeLife SAO Debug Tool** from [Thomas Flummer](https://hackaday.io/tf)!  I think that likely we will just need a jumper between pin 3 and pin 5 on the board that connects to the Flipper Zero.  I'll update this README with more information as soon as I have it!
+Hopefully by November 3rd, I'll have directions for using the [BadgeLife SAO Debug Tool](https://github.com/flummer/flipper-zero-sao-debug) from [Thomas Flummer](https://hackaday.io/tf)!  I think that likely we will just need a jumper between pin 3 and pin 5 on the board that connects to the Flipper Zero.  I'll update this README with more information as soon as I have it!
 
 ## Features
 - I2C
