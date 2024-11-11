@@ -21,6 +21,7 @@ Hopefully by November 3rd, I'll have directions for using the [BadgeLife SAO Deb
 Supported modules:
 - AS1115 - I2C display driver for Spiral Matrix Petal
 - AT24C32 - 32K I2C EEPROM
+- ATtiny816 - As configured in Touchwheel app. :)
 - LIS2DH12 - Accelerometer
 - MCP23017 - 16-bit GPIO expander
 - NXP NT3H2211W0FT1 - NFC module
@@ -49,6 +50,7 @@ Future modules:
 - [sao_mcp_out.js](./js_app/examples/apps/Scripts/SAO/sao_mcp_out.js) - Control a MCP23017 GPIO expander (Blinks GPIOA0-GPIOA5).
 - [sao_mcp_matrix.js](./js_app/examples/apps/Scripts/SAO/sao_mcp_matrix.js) - Control a MCP23017 GPIO expander (Input using a 4x4 button matrix on GPIOB0-7).
 - [sao_spiral_matrix_petal.js](./js_app/examples/apps/Scripts/SAO/sao_spiral_matrix_petal.js) - Control the [Sprial Matrix Petal SAO](https://github.com/Hack-a-Day/2024-Supercon-8-Add-On-Badge/tree/main/hardware/sao/petal_matrix), sets the inner RGB LED and creates a spiral pattern from outer LEDs.
+- [sao_touchwheel.js](./js_app/examples/apps/Scripts/SAO/sao_touchwheel.js) - Sets RGB LED and reads touchwheel position from the [Touchwheel SAO](https://github.com/todbot/TouchwheelSAO).
 - [sao_ws2812b.js](./js_app/examples/apps/Scripts/SAO/sao_ws2812b.js) - Control WS2812B RGB LEDs. Currently requires [custom firmware](#custom-firmware).
 
 ## Custom Firmware
