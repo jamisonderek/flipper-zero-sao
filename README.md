@@ -22,6 +22,7 @@ Supported modules:
 - AT24C32 - 32K I2C EEPROM
 - LIS2DH12 - Accelerometer
 - MCP23017 - 16-bit GPIO expander
+- NXP NT3H2211W0FT1 - NFC module
 - SK9822 - Addressable RGB LEDs
 - WS2812B - Addressable RGB LEDs (required rebuulding the firmware)
 
@@ -40,6 +41,7 @@ Future modules:
 - [sao_at24_w_sao69.js](./js_app/examples/apps/Scripts/SAO/sao_at24_w_sao69.js) - Program the AT24C32 EEPROM with a SAO.69 formatted message.
 - [sao_at24_w_life.js](./js_app/examples/apps/Scripts/SAO/sao_at24_w_life.js) - Program the AT24C32 EEPROM with a [Badge.team LIFE](https://badge.team/docs/standards/sao/binary_descriptor/) formatted message.
 - [sao_at24_read.js](./js_app/examples/apps/Scripts/SAO/sao_at24_read.js) - Read the AT24C32 EEPROM.
+- [sao_badge_tag_nfc.js](./js_app/examples/apps/Scripts/SAO/sao_badge_tag_nfc.js) - Programs URL to NFC tag and then reads UID and URL from tag.
 - [sao_blinky_loop.js](./js_app/examples/apps/Scripts/SAO/sao_blinky_loop.js) - Blinks the 12 WS2812B LEDs on the [Blinky Loop SAO](ckaday.io/project/198163-blinky-loop-sao) by [Thomas Flummer](https://hackaday.io/tf)
 - [sao_sk9822.js](./js_app/examples/apps/Scripts/SAO/sao_sk9822.js) - Control SK9822 RGB LEDs.
 - [sao_lis2dh12.js](./js_app/examples/apps/Scripts/SAO/sao_lis2dh12.js) - Read the LIS2DH12 accelerometer.
