@@ -1,3 +1,7 @@
+// Demo for https://hackaday.io/project/198163-blinky-loop-sao
+// Components are: LIS2DH12, WS2812b
+// Connect an Blinky Loop SAO to the I2C bus and pin A7 of the Flipper Zero.
+// SDA=pin 15, SCL=pin 16, VCC=pin 9, GND=pin 8, GPIO1=pin 2.
 let i2c = require("i2c");
 let lis2dh12 = load(__dirname + "/lis2dh12.js");
 
@@ -34,6 +38,7 @@ if (lis2dh12.init(i2c)) {
     ws2812.update();
 
     let accel = lis2dh12.accel();
+    print(accel.x, accel.y, accel.z);
     let del = accel.y;
     if (del > 16000) {del=16000;}
     delay((16000-del)/50);
