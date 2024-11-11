@@ -44,7 +44,7 @@ Future modules:
 - [sao_at24_w_life.js](./js_app/examples/apps/Scripts/SAO/sao_at24_w_life.js) - Program the AT24C32 EEPROM with a [Badge.team LIFE](https://badge.team/docs/standards/sao/binary_descriptor/) formatted message.
 - [sao_at24_read.js](./js_app/examples/apps/Scripts/SAO/sao_at24_read.js) - Read the AT24C32 EEPROM.
 - [sao_badge_tag_nfc.js](./js_app/examples/apps/Scripts/SAO/sao_badge_tag_nfc.js) - Programs URL to NFC tag and then reads UID and URL from tag.
-- [sao_blinky_loop.js](./js_app/examples/apps/Scripts/SAO/sao_blinky_loop.js) - Blinks the 12 WS2812B LEDs on the [Blinky Loop SAO](https://hackaday.io/project/198163-blinky-loop-sao) by [Thomas Flummer](https://hackaday.io/tf)
+- [sao_blinky_loop.js](./js_app/examples/apps/Scripts/SAO/sao_blinky_loop.js) - Blinks the 12 WS2812B LEDs on the [Blinky Loop SAO](https://hackaday.io/project/198163-blinky-loop-sao) by [Thomas Flummer](https://hackaday.io/tf) based on the angle of the SAO. Currently requires [custom firmware](#custom-firmware).
 - [sao_sk9822.js](./js_app/examples/apps/Scripts/SAO/sao_sk9822.js) - Control SK9822 RGB LEDs.
 - [sao_lis2dh12.js](./js_app/examples/apps/Scripts/SAO/sao_lis2dh12.js) - Read the LIS2DH12 accelerometer.
 - [sao_mcp_out.js](./js_app/examples/apps/Scripts/SAO/sao_mcp_out.js) - Control a MCP23017 GPIO expander (Blinks GPIOA0-GPIOA5).
